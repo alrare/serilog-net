@@ -1,0 +1,55 @@
+2024-03-20 15:50:04.992 -06:00 [INF] Now listening on: http://localhost:5042
+2024-03-20 15:50:05.062 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-20 15:50:05.065 -06:00 [INF] Hosting environment: Development
+2024-03-20 15:50:05.065 -06:00 [INF] Content root path: /Users/alejandroramirezreyesbroxel/Documents/Serilog/SerilogFile
+2024-03-20 15:50:14.011 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - null null
+2024-03-20 15:50:14.141 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - 200 null text/html;charset=utf-8 130.394ms
+2024-03-20 15:50:14.237 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - null null
+2024-03-20 15:50:14.343 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.1033ms
+2024-03-20 15:50:18.985 -06:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/WeatherForecast - null null
+2024-03-20 15:50:19.016 -06:00 [WRN] Failed to determine the https port for redirect.
+2024-03-20 15:50:19.026 -06:00 [INF] Executing endpoint 'SerilogFile.Controllers.WeatherForecastController.Get (SerilogFile)'
+2024-03-20 15:50:19.070 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[SerilogFile.WeatherForecast] Get() on controller SerilogFile.Controllers.WeatherForecastController (SerilogFile).
+2024-03-20 15:50:19.073 -06:00 [INF] Log personalizado
+2024-03-20 15:50:19.082 -06:00 [INF] Executing ObjectResult, writing value of type 'SerilogFile.WeatherForecast[]'.
+2024-03-20 15:50:19.104 -06:00 [INF] Executed action SerilogFile.Controllers.WeatherForecastController.Get (SerilogFile) in 30.3152ms
+2024-03-20 15:50:19.105 -06:00 [INF] Executed endpoint 'SerilogFile.Controllers.WeatherForecastController.Get (SerilogFile)'
+2024-03-20 15:50:19.105 -06:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/WeatherForecast - 200 null application/json; charset=utf-8 122.7172ms
+2024-03-20 15:51:46.981 -06:00 [INF] Application is shutting down...
+2024-03-20 15:53:32.193 -06:00 [WRN] Failed to determine the https port for redirect.
+2024-03-20 15:53:32.327 -06:00 [WRN] Log personalizado
+2024-03-20 15:53:32.345 -06:00 [ERR] The method or operation is not implemented.
+System.NotImplementedException: The method or operation is not implemented.
+   at SerilogFile.Controllers.WeatherForecastController.Get() in /Users/alejandroramirezreyesbroxel/Documents/Serilog/SerilogFile/Controllers/WeatherForecastController.cs:line 29
+2024-03-20 16:12:14.207 -06:00 [WRN] Log personalizado
+2024-03-20 16:12:14.216 -06:00 [ERR] The method or operation is not implemented.
+System.NotImplementedException: The method or operation is not implemented.
+   at SerilogFile.Controllers.WeatherForecastController.Get() in /Users/alejandroramirezreyesbroxel/Documents/Serilog/SerilogFile/Controllers/WeatherForecastController.cs:line 29
+2024-03-20 16:12:15.123 -06:00 [WRN] Log personalizado
+2024-03-20 16:12:15.125 -06:00 [ERR] The method or operation is not implemented.
+System.NotImplementedException: The method or operation is not implemented.
+   at SerilogFile.Controllers.WeatherForecastController.Get() in /Users/alejandroramirezreyesbroxel/Documents/Serilog/SerilogFile/Controllers/WeatherForecastController.cs:line 29
+2024-03-20 16:12:15.902 -06:00 [WRN] Log personalizado
+2024-03-20 16:12:15.904 -06:00 [ERR] The method or operation is not implemented.
+System.NotImplementedException: The method or operation is not implemented.
+   at SerilogFile.Controllers.WeatherForecastController.Get() in /Users/alejandroramirezreyesbroxel/Documents/Serilog/SerilogFile/Controllers/WeatherForecastController.cs:line 29
+2024-03-20 16:12:16.395 -06:00 [WRN] Log personalizado
+2024-03-20 16:12:16.399 -06:00 [ERR] The method or operation is not implemented.
+System.NotImplementedException: The method or operation is not implemented.
+   at SerilogFile.Controllers.WeatherForecastController.Get() in /Users/alejandroramirezreyesbroxel/Documents/Serilog/SerilogFile/Controllers/WeatherForecastController.cs:line 29
+2024-03-20 16:12:16.717 -06:00 [WRN] Log personalizado
+2024-03-20 16:12:16.718 -06:00 [ERR] The method or operation is not implemented.
+System.NotImplementedException: The method or operation is not implemented.
+   at SerilogFile.Controllers.WeatherForecastController.Get() in /Users/alejandroramirezreyesbroxel/Documents/Serilog/SerilogFile/Controllers/WeatherForecastController.cs:line 29
+2024-03-20 16:12:16.991 -06:00 [WRN] Log personalizado
+2024-03-20 16:12:16.994 -06:00 [ERR] The method or operation is not implemented.
+System.NotImplementedException: The method or operation is not implemented.
+   at SerilogFile.Controllers.WeatherForecastController.Get() in /Users/alejandroramirezreyesbroxel/Documents/Serilog/SerilogFile/Controllers/WeatherForecastController.cs:line 29
+2024-03-20 16:12:17.281 -06:00 [WRN] Log personalizado
+2024-03-20 16:12:17.283 -06:00 [ERR] The method or operation is not implemented.
+System.NotImplementedException: The method or operation is not implemented.
+   at SerilogFile.Controllers.WeatherForecastController.Get() in /Users/alejandroramirezreyesbroxel/Documents/Serilog/SerilogFile/Controllers/WeatherForecastController.cs:line 29
+2024-03-20 16:12:17.551 -06:00 [WRN] Log personalizado
+2024-03-20 16:12:17.552 -06:00 [ERR] The method or operation is not implemented.
+System.NotImplementedException: The method or operation is not implemented.
+   at SerilogFile.Controllers.WeatherForecastController.Get() in /Users/alejandroramirezreyesbroxel/Documents/Serilog/SerilogFile/Controllers/WeatherForecastController.cs:line 29
