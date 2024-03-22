@@ -1,0 +1,284 @@
+COMMUNITY  Sesión de los de los jueves 4:00pm
+Se revisan temas de tecnologia propuestas de mejoramiento
+
+- Post-it cada año hay opción de cambiar de equipo
+
+INGRESOS
+Paco entra como SRE
+Alex Code Review
+Switch con Tania sesión de martes con team DEV
+
+Seguimiento logs GCP no son útiles 
+
+SCRUM debe gestionar la solicitud de accesos a logs DEV
+
+Propuesta libreria Serilog se configurar reglas
+- Definir reglas 
+- Cuales se deben configurar (contraseñas, información sensible tarjetas en claro no) 
+
+GCP
+- Cuentas de servicio por Secure File
+
+
+Bitácora de auditoria a nivel de base de datos
+LogError del aplicativo
+
+Manejo de excepciones 
+Prendido y apagado de los logs por ambiente
+Trace
+Information 
+Warning 
+Error
+
+SRE tablero
+
+PROPUESTA DE LOGS
+Auditoria 
+Operativo
+Aplicativo-Desarrollo 
+
+
+SOLICITAR INSTALACION
+Visual Studio 2022
+Postman
+Office 365
+
+
+
+07/03/2024
+PROPUESTA DE LOGS
+
+Log Auditoria  - Duración de 5 años (3 meses en vivo) histórico en cold storage
+- No trace , no información confidencial
+ Log Operativo  - 90 días en vivo y ?% Cold Storage 1 año
+ Log Aplicativo -30 días en vivo (Prod switchable) y 0% Cold Storage
+
+Id de correlación
+Origen de la llamada
+
+Accesos (Colibri, Tengo, Broxel)
+Log Aplicativo
+Log Operativo
+Log Auditoria
+
+Log Aplicativo* (Traza completa de error, Linea de código, donde ocurrió y excepción y/o valores)
+Log Operativo* (Indicar que la operación que se realizaba no se completo correctamente)
+Log Auditoria (Quien realizaba la operación, que intentaba hacer, error que no se completo)
+
+Serilog con distintas reglas
+Serilog con Sync de Google
+
+Google log
+
+Dependabot (Actualización de paquetes automatico)
+
+Prueba de concepto SERILOG considerando 
+Net 6
+Net 8
+Framework 4.6
+mauii
+
+
+
+DOCKER - SQL SERVER 
+https://abi.gitbook.io/net-core/introduccion/2.-instalacion-de-sql-server-en-mac
+
+10.100.8.30 
+
+docker pull mcr.microsoft.com/mssql/server:2019-latest
+
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=$Ramirez44 -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
+
+EF 
+https://stackoverflow.com/questions/45382536/how-to-enable-migrations-in-visual-studio-for-mac 
+
+
+Unit of work, patron respository
+Conflictos de concurrencia
+Interceptores en EF Core
+Soft Delete
+ID vs UUID
+
+
+SFTP GATEWAY
+https://azuremarketplace.microsoft.com/en-us/marketplace/apps/thorntechnologiesllc.sftpgateway?tab=overview
+
+https://thorntech.com/sftpgatewayazurelive/?utm_source=sftpgwazureprofilepage&utm_medium=azuremarketplace&utm_campaign=sftpgwazure
+
+
+Crear carpeta en local Serilog
+
+Abrir carpeta Serilog en VSCode
+
+Ejecutar comando en terminal
+
+  dotnet new webapi --use-controllers -o Serilog
+  cd Serilog
+  dotnet add package Microsoft.EntityFrameworkCore.InMemory
+  code -r ../Serilog
+
+Ejecutar dotnet build 
+Ejecutar dotnet run 
+
+En un navegador abrir el swagger 
+http://localhost:5065/swagger/index.html
+
+Instalar paquetes nuget de serilog
+- Serilog.AspNetCore
+       dotnet add package Serilog.AspNetCore --version 8.0.0
+
+- Serilog.Settings.Configuration
+       dotnet add package Serilog.Settings.Configuration --version 8.0.0
+		
+- Serilog.Sinks.MSSqlServer
+	dotnet add package Serilog.Sinks.MSSqlServer --version 6.6.0
+
+
+dotnet remove SerilogBroxel.csproj package Serilog.AspNetCore.Plus
+dotnet remove package -h|--help
+
+Cambio de NET
+https://www.youtube.com/watch?v=63wzUkdZLGU
+
+dotnet new webapi -f net6.0 -o SerilogNet6 
+cd SerilogNet6
+dotnet add package Microsoft.EntityFrameworkCore.InMemory
+code -r ../SerilogNet6
+
+dotnet new webapi --use-controllers -f net8.0 -o SerilogNet8 
+cd SerilogNet8
+dotnet add package Microsoft.EntityFrameworkCore.InMemory
+code -r ../SerilogNet8
+
+
+
+dotnet --version
+
+dotnet --list-sdks 
+
+
+Serilog - Guardando Logs en SQL Server | ASP.NET Core
+https://www.youtube.com/watch?v=HGXTv0_0NZQ&t=334s 
+
+
+
+14/03/2024
+COMMUNITY Sesión de los jueves
+
+IA se maneja por Token ahora 64 mil
+Gemini IA 4.5  10 millones
+
+Cognition Labs
+
+****************************************************************************
+
+SERILOG 
+Correlación idAplicativo 
+Proyectos Framework utilizar (standard 2.0)
+Cambiar el sink para GCP
+
+Como manejar logs en aplicación móvil
+- Guardar en el teléfono y luego subir 
+Para logger de app
+BrowserStack App Automate
+
+
+Jorge
+Pipelines - SRE Dev
+Uso de agentes M2
+
+Freeze - Migration MySQL Prod
+
+Próximo Sprint Master / Main aprobación por Code Reviews
+
+
+ 15/03/2024
+SERILOG - GCP - NET 8 No existe 
+
+
+SERILOG - GCP - NET 6, NET 5, STANDARD 2.1
+https://github.com/manigandham/serilog-sinks-googlecloudlogging/tree/master/src
+https://www.nuget.org/packages/Serilog.Sinks.GoogleCloudLogging/5.0.0
+
+
+SERILOG - GCP - STANDARD 2.0
+https://github.com/manigandham/serilog-sinks-googlecloudlogging https://www.nuget.org/packages/Serilog.Sinks.GoogleCloudLogging/4.0.0
+
+
+SERILOGFRAMEWORK46
+
+
+
+19/03/2024
+
+Crear 2 proyectos en GCP para ambiente productivo
+
+
+- LogAudit
+- LogAplicativo
+- LogOperatiivo se tomara el que ya realizo Cristian todos los ambientes
+- Se comparte repo donde compartirá Oscar Alayón el código de logger actual
+
+
+
+20/03/2024
+
+ServiceNow 
+Se solicita acceso a SeriviceNow ya se dio de alta junto con usuario 
+Se resetea contraseña ServiceNow
+
+Para Logger 
+Se solicita a Max crear proyecto 
+
+
+
+
+21/03/2024
+
+Log de cliente para App Mobil 
+- App Mobil
+- WebAssembly
+- SPA
+- Escritorio
+
+Lo que corre fuera de servidor 
+
+Se recolecta log local y con proceso externo se envía información al server
+- Cuando ocurra error 
+- Cuando cliente pida soporte 
+- Feedback se envía logs locales al servidor 
+- Herramienta MetroLog 
+
+Agregar a la wiki el tema de logs para App Mobil
+
+Standard para variables en el código 
+- Variables privadas o locales puede ser español
+- Variables externas nuggets servicios terceros liveBanking en inglés
+
+Nomenclatura (Recomendación inglés)
+Documentación (Recomendación español)
+
+Arquitecto sub-director directo del desarrollador podrá autorizar 
+- Se puede comentar que por carga de trabajo se cumplirá en X tiempo
+
+Revisa Max este tema
+Branch checkmarx para definir el tiempo de cuando se tienen que scanear 
+- Solo cuando lo solicita el area de seguridad
+
+Buscar acrónimo no sensitivo para checkmarx
+- Account 
+- Key
+- Password
+
+EndDepend
+Pipe de App5
+- Versión en el que corre
+- Dice las dependencias de esa librería dll
+
+SRE
+- Se va a quitar el agent mini 
+- Los M2 se pasaran al site
+
+Están habilitados 
+Copilot chat 
+Copilot  complement
